@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/script.js"></script>
+    <title>Présentation de mon portfolio</title>
+</head>
+<body>
+    
+ <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <header>
+        <nav class="navbar">
+            <a href="" class="logo"><b>M</b>ahmoud.</a>
+            <ul class="navLinks">
+            <li><a href="#acceuil">Acceuil</a></li>
+            <li><a href="#apropos">Á propos</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>    
+            </ul>
+
+            <form action="" class="form1">
+            <div class="search">
+            <input type="search" id="search" placeholder="Rechercher sur le portfolio...">
+            <button>Rechercher</button>
+        </div>
+        </form>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+        </nav>
+
+    </header>
+
+    <section class="acceuil1" id="acceuil">
+    <div class="acceuil">
+        <h1>Salut ! <br>
+            Je suis Mouhameth Konate
+        </h1>
+        <div class="info">
+            <p>Spécialisé dans la création d'interfaces utilisateur intuitives et réactives. Avec une expertise en [HTML, CSS, JavaScript, et frameworks comme React], je transforme des designs en expériences web engageantes et performantes</p>
+        <img src="/photos/moi.jpg" alt="" class="photo">
+        </div>
+        
+
+        <div class="icon">
+           <a href=""> <box-icon name='facebook-square' type='logo' color='#091afa' ></box-icon></a>
+           <a href=""> <box-icon name='whatsapp-square' type='logo' color='#25fa09' ></box-icon></a>
+           <a href=""> <box-icon name='instagram-alt' type='logo' color='#e0244a' ></box-icon></a>
+            <a href=""><box-icon name='linkedin-square' type='logo' color='#0077b5' ></box-icon></a>
+        </div>
+    </div>
+
+    
+    </section>
+
+    <section class="a_propos" id="apropos">
+        <h2>A propos de moi</h2>
+        <div class="apropos">
+          <h4>Développeur <b style="color: gray;">FRONT-END</b></h4>
+          <div class="propos">
+            <img src="photos/apropos.jpeg" alt="">
+          <p>Je suis un développeur front-end passionné par la création d'interfaces utilisateur intuitives et réactives. Avec une solide expertise en HTML, CSS, JavaScript, et des frameworks modernes comme React, j'ai pour objectif de transformer des designs en expériences web engageantes et performantes. <br><br>
+
+            Mon expérience s'étend à divers projets, allant de sites vitrine élégants à des applications web dynamiques. J'ai une attention particulière pour les détails et une forte compréhension des principes de design et d'expérience utilisateur. Chaque projet est une opportunité de fusionner mes compétences techniques avec ma créativité pour offrir des solutions web optimales. <br> <br>
+            
+            Explorez mon portfolio pour découvrir comment je mets en œuvre des technologies de pointe pour créer des interfaces utilisateur qui non seulement captent l'attention mais aussi améliorent la satisfaction des utilisateurs.</p>
+          </div>
+        </div>
+
+        <div class="service" id="service">
+            <h2 style="display: flex;justify-content: center;align-items: center;">Mes services</h2>
+            <div class="langage">
+                <h5>Langages maitrisés</h5>
+            <div class="langage"><box-icon name='html5' type='logo' animation='flashing' color='#ff6630' >HTML</box-icon></div>
+            <div class="langage"><box-icon name='css3' type='logo' animation='flashing' color='#0000ff' >CSS</box-icon></div>
+            <div class="langage"><box-icon name='javascript' type='logo' animation='flashing' color='#f0db4f' >JS</box-icon></div>
+            </div>
+            <div class="comp">
+                <div>
+                    <h5>Créateur d'interface utilisateur</h5>
+                    <p>Conception et développement d'interfaces intuitives et esthétiques.</p>
+                </div>
+                <div>
+                    <h5>Développement front-end</h5>
+                    <p> Implémentation de la partie visible des applications web.</p>
+                </div>
+                <div>
+                    <h5>Optimisation</h5>
+                    <p>Amélioration des performances, de la vitesse de chargement et de l'expérience utilisateur.</p>
+                </div>
+            </div>
+            <p class="p1">Fort de mon expérience, je suis à l'aise pour résoudre des problèmes complexes en proposant des solutions innovantes. Je suis un fervent partisan de la collaboration et je sais travailler efficacement en équipe, notamment avec d'autres développeurs.</p>
+        </div>
+    </section>
+
+    <section class="contacts" id="contact">
+        <h2 style="display: flex;justify-content: center;align-items: center; font-size: 35px;">Me contacter</h2>
+        <div class="contact">
+            <form action="">
+                
+                <label for="name" id="prenom_nom">Entrez votre prenom et nom</label><br>
+                <input type="name" id="prenom_nom" placeholder="Prénom Nom"><br> <br> <br>
+
+                <label for="email" id="email">Entrez votre adresse email</label><br>
+                <input type="email" id="email" placeholder="exemple@gmail.com"><br> <br> <br>
+
+                <label for="tel" id="tel">Entrez votre numero de téléphone</label><br> 
+                <input type="tel" id="tel" placeholder="+221 00 000 00 00"><br> <br> <br>
+                
+                <label for="note" id="note">Ecrivez nous</label><br> 
+                <textarea name="note" id="note" placeholder="Entrez votre message"></textarea><br><br>
+                <input type="submit" id="submit">
+
+            </form>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer">
+            <p>© copyright by Mahmoud</p>
+            <a href=""><box-icon name='contact' type='solid' color='#24afe0' ></box-icon></a>
+            <a href=""><box-icon name='gmail' type='logo' color='#e02824' ></box-icon></a>
+            <a href=""> <box-icon name='facebook-square' type='logo' color='#091afa' ></box-icon></a>
+           <a href=""> <box-icon name='whatsapp-square' type='logo' color='#25fa09' ></box-icon></a>
+           <a href=""> <box-icon name='instagram-alt' type='logo' color='#e0244a' ></box-icon></a>
+            <a href=""><box-icon name='linkedin-square' type='logo' color='#0077b5' ></box-icon></a>
+        </div>
+    </footer>
+</body>
+</html>

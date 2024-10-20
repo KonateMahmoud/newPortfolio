@@ -1,0 +1,442 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #000510;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*stylisaion de la partie navigation*/
+
+.menu-icon{
+    display: none;
+}
+.navbar{
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.logo{
+    margin: 10px;
+    padding: 2px;
+    color: #000510;
+    background-color: #fff;
+    font-size: 20px;
+}
+.logo b{
+    font-size: 20px;
+}
+
+.navLinks{
+    display: flex;
+}
+.navLinks li{
+    margin: 10px;
+    padding: 2px;
+    display: flex;
+}
+a{
+    text-decoration: none;
+}
+
+.search{
+    margin-right: 5px;
+    margin: auto;
+}
+#search{
+    margin: 5px;
+    border: solid 1px gray;
+}
+.search button{
+    border-radius: 5px;
+    border: solid gray 1px;
+    padding: auto;
+}
+/*responsive de la partie header...*/
+
+@media screen and (max-width:770px) {
+    .navLinks{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:700px) {
+    .navLinks{
+        font-size: 9px;
+    }
+}
+@media screen and (max-width:650px) {
+    .navLinks{
+        font-size: 7px;
+    }
+    .navLinks li{
+        margin: 8px;
+    }
+}
+@media screen and (max-width:595px) {
+    .menu-icon{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .navLinks{
+        display: none;
+        flex-direction:column;
+        font-size: 12px;
+    }
+    .search{
+        display: none;
+    }
+}
+/*partie acceuil du portfolio*/
+ .apropos,.service, .contacts{
+    min-height: 100vh;
+}
+
+.acceuil1{
+   margin: 200px;
+   margin-bottom: 100px;
+}
+.acceuil h1{
+    font-size: 50px;
+}
+
+.info{
+    display: flex;
+
+}
+.info p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.photo{
+    width:35vh;
+    border-radius: 50%;
+}
+
+.icon{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon a{
+    margin: 10px;
+    padding:auto;
+    
+}
+.icon box-icon{
+    background-color: #002547;
+    border-radius: 50%;
+    width: 110%;
+}
+.icon box-icon:hover{
+    background-color: gray;
+    box-shadow: #000 3px 1px 2px 1px;
+}
+
+/*Responsive de la page d'acceuil*/
+
+@media screen and (max-width:1300px) {
+    .info p{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:1240px) {
+    .photo{
+        width: 30vh;
+    }
+    .info p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:1050px){
+    .acceuil h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:1040px) {
+    .photo{
+        width: 30vh;
+    }
+    .info p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:945px) {
+    .photo{
+        width: 12vh;
+    }
+    .info p{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width:825px) {
+    .info p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .photo{
+        display: flex;
+        align-self: center;
+        margin: 5px;
+    }
+}
+@media screen and (max-width:790px){
+    .acceuil h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:650px){
+    .icon box-icon{
+        width: 3vh;
+    }
+    .icon{
+        margin: 18px;
+    }
+}
+@media screen and (max-width:556px){
+    .acceuil h1{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:530px){
+    .acceuil1{
+        margin: 90px;
+     }
+}
+@media screen and (max-width:390px){
+    .acceuil1{
+        margin: 70px;
+     }
+}
+/*partie à propos du portfolio*/
+.a_propos h2{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+}
+.apropos{
+    margin: 50px;
+    margin-bottom: 110px;
+}
+
+.apropos p{
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+}
+.propos{
+    display: flex;
+}
+.propos img{
+    width: 300px;
+}
+.apropos h4{
+    font-size: 25px;
+    margin: 25px;
+}
+/*responsive pour la partie a propos*/
+
+@media screen and (max-width:900px) {
+    .propos img{
+        width: 30vh;
+    }
+    .apropos p{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:790px) {
+    .propos img{
+        width: 25vh;
+    }
+    .apropos p{
+        font-size: 13px;
+    }
+}
+@media screen and (max-width:680px) {
+    .propos{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:470px) {
+    .apropos h4{
+        font-size: 18px;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+    .a_propos h2{
+        font-size: 30px;
+    }
+}
+/*stylisation de la partie service*/
+
+.langage{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.comp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
+
+.comp p{
+    margin: 10px;
+}
+h2, h5{
+    color: gray;
+}
+.service .p1{
+    margin: 100px;
+    margin-top: 0;
+    font-size: 20px;
+}
+/*responsive de la partie service*/
+
+@media screen and (max-width:890px){
+    .langage {
+        margin-left: 0;
+    }
+    .comp{
+        margin: 50px;
+    }
+    .service .p1{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:795px){
+    .langage {
+        
+    }
+    .comp{
+        margin: 25px;
+        font-size: 12px;
+    }
+    .service .p1{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:595px){
+    .langage {
+        
+    }
+    .comp{
+        margin: 25px;
+        font-size: 10px;
+    }
+    .service .p1{
+        font-size: 15px;
+        margin: 50px;
+    }
+}
+@media screen and (max-width:533px){
+
+    .comp{
+        display: flex;
+       flex-wrap: wrap;
+       font-size: 12px;
+
+    }
+}
+
+/*stylisation de la partie contact*/
+
+.contact{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.contact label{
+    font-size: 18px;
+    font-family: "agency fb", sans-serif;
+}
+.contact input{
+    border: solid gray 1px;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 25rem;
+    height: 2rem;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+}
+
+textarea{
+    border: solid gray 1px;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 18px;
+    width: 25rem;
+    height: 10rem;
+    color: white;
+    padding: 10px;
+}
+#submit{
+    width: 5.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+}
+#submit:hover{
+    box-shadow: gray 1px 1px 2px 2px;
+}
+
+@media screen and (max-width:450px) {
+    .contact label{
+        font-size: 13px;
+        font-family: "agency fb", sans-serif;
+    }
+    .contact input{
+        width: 18rem;
+        height: 2rem;
+        font-size: 18px;
+
+    }
+    
+    textarea{
+        font-size: 18px;
+        width: 18rem;
+        height: 5rem;
+    }
+
+    .footer box-icon{
+        width: 1rem;
+        background-color: #000;
+    }
+
+
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #000;
+
+}
+.footer p{
+    background-color: #000;
+    margin-right: 5rem;
+    font-size: 10px;
+}
+
+.footer a{
+    background-color: #000;
+    margin: 10px;
+}
